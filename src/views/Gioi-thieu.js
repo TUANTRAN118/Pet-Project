@@ -5,7 +5,7 @@ const GioiThieu = () => (
     <div className='container-fluid' style={{ width: '1550px' }} >
 
 
-       <h3> content</h3>
+       <h3> test</h3>
        <h3> content</h3>
        <h3> content</h3>
        <h3> content</h3>
