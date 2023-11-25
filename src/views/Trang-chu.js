@@ -1,5 +1,8 @@
 // Home.js
 import React from 'react';
+import { hover } from '@testing-library/user-event/dist/hover';
+import React from 'react';
+import { Button } from 'react-bootstrap';
 
 
 const Home = () => (
@@ -82,6 +85,9 @@ const Home = () => (
           <div className='item_8 row' style={{ height: '35px' }}>
             <div className='col-2 m-0 p-0'>
               <img src={require('../assets/Product_Categories_ic/herbs.png')} alt="Pet Family" style={{ height: '35px', width: '35px' }} />
+
+              <img src={require('../assets/Product_Categories_ic/herbs.png')} alt="Pet Family" style={{ height: '35px', width: '35px' }} />
+
             </div>
 
             <div className='col d-flex  align-items-center' style={{ fontSize: '20px', fontFamily: 'Robonto', fontWeight: '300' }}>
@@ -225,7 +231,438 @@ const Home = () => (
 
 
     </div>
-  </div>
+      <div className='row mt-5 text-center' style={{ backgroundColor: '#EEEEEE' }} >
+        {/* <h2 className='m-0' style={{ font: '600 18px/20px "Roboto', padding: '14PX 0' }}>SẢN PHẨM GIẢM GIÁ</h2> */}
+
+        <div id="carouselExampleIndicators" class="carousel slide mt-2">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+
+            <div class="carousel-item active ">
+
+              <div className='row p-3 '>
+
+                <div className='col d-flex justify-content-center '>
+                  <div class="card mb-3 position-relative" style={{ maxWidth: '650px', height: '250px' }}>
+                    <div class="position-absolute bg-danger top-0 start-0 m-0 p-0" style={{ width: '45px', height: '25px', color: '#fff', fontSize: '15px', fontWeight: '400' }}> 30% </div>
+                    <div class="row g-0">
+                      <div class="col-md-4 cm-0">
+                        <img src={require('../assets/Card_img/customizable-mug-4.webp')} alt="Pet Family" className='img-fluid m-4 ' style={{ objectFit: 'cover' }} />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body text-start">
+                          <h2 class="card-title  mt-4 mx-3">Thức ăn cho mèo vị gà tây Flower Chair</h2>
+                          <div style={{ display: 'inline' }}>
+                            <h3 class="mx-3" style={{ fontWeight: '700', color: '#0174BE', display: 'inline-block' }}> 320.000đ </h3>
+                            <p style={{ fontWeight: '400', fontSize: '17px', color: '#666', display: 'inline-block' }} ><del> 3200000 </del></p>
+                          </div>
+
+                          <div class="cart ">
+                            <Button type='button' className='text-start mx-3 rounded border border-light' style={{ width: '45px', height: '45px', backgroundColor: 'rgb(255, 136, 75)' }}>
+                              <img src={require('../assets/Card_img/ic-cart-product2.webp')} alt="Pet Family" className='' style={{ width: '26px', height: '26px' }} />
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div className='col d-flex justify-content-center '>
+                  <div class="card mb-3 position-relative" style={{ maxWidth: '650px', height: '250px' }}>
+                    <div class="position-absolute bg-danger top-0 start-0 m-0 p-0" style={{ width: '45px', height: '25px', color: '#fff', fontSize: '15px', fontWeight: '400' }}> 30% </div>
+                    <div class="row g-0">
+                      <div class="col-md-4 cm-0">
+                        <img src={require('../assets/Card_img/customizable-mug-4.webp')} alt="Pet Family" className='img-fluid m-4 ' style={{ objectFit: 'cover' }} />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body text-start">
+                          <h2 class="card-title  mt-4 mx-3">Thức ăn cho mèo vị gà tây Flower Chair</h2>
+                          <div style={{ display: 'inline' }}>
+                            <h3 class="mx-3" style={{ fontWeight: '700', color: '#0174BE', display: 'inline-block' }}> 320.000đ </h3>
+                            <p style={{ fontWeight: '400', fontSize: '17px', color: '#666', display: 'inline-block' }} ><del> 3200000 </del></p>
+                          </div>
+
+                          <div class="cart ">
+                            <Button type='button' className='text-start mx-3 rounded border border-light' style={{ width: '45px', height: '45px', backgroundColor: 'rgb(255, 136, 75)' }}>
+                              <img src={require('../assets/Card_img/ic-cart-product2.webp')} alt="Pet Family" className='' style={{ width: '26px', height: '26px' }} />
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div className='row p-3'>
+
+                <div className='col d-flex justify-content-center '>
+                  <div class="card mb-3 position-relative" style={{ maxWidth: '650px', height: '250px' }}>
+                    <div class="position-absolute bg-danger top-0 start-0 m-0 p-0" style={{ width: '45px', height: '25px', color: '#fff', fontSize: '15px', fontWeight: '400' }}> 30% </div>
+                    <div class="row g-0">
+                      <div class="col-md-4 cm-0">
+                        <img src={require('../assets/Card_img/customizable-mug-4.webp')} alt="Pet Family" className='img-fluid m-4 ' style={{ objectFit: 'cover' }} />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body text-start">
+                          <h2 class="card-title  mt-4 mx-3">Thức ăn cho mèo vị gà tây Flower Chair</h2>
+                          <div style={{ display: 'inline' }}>
+                            <h3 class="mx-3" style={{ fontWeight: '700', color: '#0174BE', display: 'inline-block' }}> 320.000đ </h3>
+                            <p style={{ fontWeight: '400', fontSize: '17px', color: '#666', display: 'inline-block' }} ><del> 3200000 </del></p>
+                          </div>
+
+                          <div class="cart ">
+                            <Button type='button' className='text-start mx-3 rounded border border-light' style={{ width: '45px', height: '45px', backgroundColor: 'rgb(255, 136, 75)' }}>
+                              <img src={require('../assets/Card_img/ic-cart-product2.webp')} alt="Pet Family" className='' style={{ width: '26px', height: '26px' }} />
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className='col d-flex justify-content-center '>
+                  <div class="card mb-3 position-relative" style={{ maxWidth: '650px', height: '250px' }}>
+                    <div class="position-absolute bg-danger top-0 start-0 m-0 p-0" style={{ width: '45px', height: '25px', color: '#fff', fontSize: '15px', fontWeight: '400' }}> 30% </div>
+                    <div class="row g-0">
+                      <div class="col-md-4 cm-0">
+                        <img src={require('../assets/Card_img/customizable-mug-4.webp')} alt="Pet Family" className='img-fluid m-4 ' style={{ objectFit: 'cover' }} />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body text-start">
+                          <h2 class="card-title  mt-4 mx-3">Thức ăn cho mèo vị gà tây Flower Chair</h2>
+                          <div style={{ display: 'inline' }}>
+                            <h3 class="mx-3" style={{ fontWeight: '700', color: '#0174BE', display: 'inline-block' }}> 320.000đ </h3>
+                            <p style={{ fontWeight: '400', fontSize: '17px', color: '#666', display: 'inline-block' }} ><del> 3200000 </del></p>
+                          </div>
+
+                          <div class="cart ">
+                            <Button type='button' className='text-start mx-3 rounded border border-light' style={{ width: '45px', height: '45px', backgroundColor: 'rgb(255, 136, 75)' }}>
+                              <img src={require('../assets/Card_img/ic-cart-product2.webp')} alt="Pet Family" className='' style={{ width: '26px', height: '26px' }} />
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="carousel-item">
+              <div className='row p-3 '>
+
+                <div className='col d-flex justify-content-center '>
+                  <div class="card mb-3 position-relative" style={{ maxWidth: '650px', height: '250px' }}>
+                    <div class="position-absolute bg-danger top-0 start-0 m-0 p-0" style={{ width: '45px', height: '25px', color: '#fff', fontSize: '15px', fontWeight: '400' }}> 30% </div>
+                    <div class="row g-0">
+                      <div class="col-md-4 cm-0">
+                        <img src={require('../assets/Card_img/customizable-mug-4.webp')} alt="Pet Family" className='img-fluid m-4 ' style={{ objectFit: 'cover' }} />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body text-start">
+                          <h2 class="card-title  mt-4 mx-3">Thức ăn cho mèo vị gà tây Flower Chair</h2>
+                          <div style={{ display: 'inline' }}>
+                            <h3 class="mx-3" style={{ fontWeight: '700', color: '#0174BE', display: 'inline-block' }}> 320.000đ </h3>
+                            <p style={{ fontWeight: '400', fontSize: '17px', color: '#666', display: 'inline-block' }} ><del> 3200000 </del></p>
+                          </div>
+
+                          <div class="cart ">
+                            <Button type='button' className='text-start mx-3 rounded border border-light' style={{ width: '45px', height: '45px', backgroundColor: 'rgb(255, 136, 75)' }}>
+                              <img src={require('../assets/Card_img/ic-cart-product2.webp')} alt="Pet Family" className='' style={{ width: '26px', height: '26px' }} />
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div className='col d-flex justify-content-center '>
+                  <div class="card mb-3 position-relative" style={{ maxWidth: '650px', height: '250px' }}>
+                    <div class="position-absolute bg-danger top-0 start-0 m-0 p-0" style={{ width: '45px', height: '25px', color: '#fff', fontSize: '15px', fontWeight: '400' }}> 30% </div>
+                    <div class="row g-0">
+                      <div class="col-md-4 cm-0">
+                        <img src={require('../assets/Card_img/customizable-mug-4.webp')} alt="Pet Family" className='img-fluid m-4 ' style={{ objectFit: 'cover' }} />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body text-start">
+                          <h2 class="card-title  mt-4 mx-3">Thức ăn cho mèo vị gà tây Flower Chair</h2>
+                          <div style={{ display: 'inline' }}>
+                            <h3 class="mx-3" style={{ fontWeight: '700', color: '#0174BE', display: 'inline-block' }}> 320.000đ </h3>
+                            <p style={{ fontWeight: '400', fontSize: '17px', color: '#666', display: 'inline-block' }} ><del> 3200000 </del></p>
+                          </div>
+
+                          <div class="cart ">
+                            <Button type='button' className='text-start mx-3 rounded border border-light' style={{ width: '45px', height: '45px', backgroundColor: 'rgb(255, 136, 75)' }}>
+                              <img src={require('../assets/Card_img/ic-cart-product2.webp')} alt="Pet Family" className='' style={{ width: '26px', height: '26px' }} />
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div className='row p-3'>
+
+                <div className='col d-flex justify-content-center '>
+                  <div class="card mb-3 position-relative" style={{ maxWidth: '650px', height: '250px' }}>
+                    <div class="position-absolute bg-danger top-0 start-0 m-0 p-0" style={{ width: '45px', height: '25px', color: '#fff', fontSize: '15px', fontWeight: '400' }}> 30% </div>
+                    <div class="row g-0">
+                      <div class="col-md-4 cm-0">
+                        <img src={require('../assets/Card_img/customizable-mug-4.webp')} alt="Pet Family" className='img-fluid m-4 ' style={{ objectFit: 'cover' }} />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body text-start">
+                          <h2 class="card-title  mt-4 mx-3">Thức ăn cho mèo vị gà tây Flower Chair</h2>
+                          <div style={{ display: 'inline' }}>
+                            <h3 class="mx-3" style={{ fontWeight: '700', color: '#0174BE', display: 'inline-block' }}> 320.000đ </h3>
+                            <p style={{ fontWeight: '400', fontSize: '17px', color: '#666', display: 'inline-block' }} ><del> 3200000 </del></p>
+                          </div>
+
+                          <div class="cart ">
+                            <Button type='button' className='text-start mx-3 rounded border border-light' style={{ width: '45px', height: '45px', backgroundColor: 'rgb(255, 136, 75)' }}>
+                              <img src={require('../assets/Card_img/ic-cart-product2.webp')} alt="Pet Family" className='' style={{ width: '26px', height: '26px' }} />
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className='col d-flex justify-content-center '>
+                  <div class="card mb-3 position-relative" style={{ maxWidth: '650px', height: '250px' }}>
+                    <div class="position-absolute bg-danger top-0 start-0 m-0 p-0" style={{ width: '45px', height: '25px', color: '#fff', fontSize: '15px', fontWeight: '400' }}> 30% </div>
+                    <div class="row g-0">
+                      <div class="col-md-4 cm-0">
+                        <img src={require('../assets/Card_img/customizable-mug-4.webp')} alt="Pet Family" className='img-fluid m-4 ' style={{ objectFit: 'cover' }} />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body text-start">
+                          <h2 class="card-title  mt-4 mx-3">Thức ăn cho mèo vị gà tây Flower Chair</h2>
+                          <div style={{ display: 'inline' }}>
+                            <h3 class="mx-3" style={{ fontWeight: '700', color: '#0174BE', display: 'inline-block' }}> 320.000đ </h3>
+                            <p style={{ fontWeight: '400', fontSize: '17px', color: '#666', display: 'inline-block' }} ><del> 3200000 </del></p>
+                          </div>
+
+                          <div class="cart ">
+                            <Button type='button' className='text-start mx-3 rounded border border-light' style={{ width: '45px', height: '45px', backgroundColor: 'rgb(255, 136, 75)' }}>
+                              <img src={require('../assets/Card_img/ic-cart-product2.webp')} alt="Pet Family" className='' style={{ width: '26px', height: '26px' }} />
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+
+            </div>
+
+            <div class="carousel-item">
+              <div className='row p-3 '>
+
+                <div className='col d-flex justify-content-center '>
+                  <div class="card mb-3 position-relative" style={{ maxWidth: '650px', height: '250px' }}>
+                    <div class="position-absolute bg-danger top-0 start-0 m-0 p-0" style={{ width: '45px', height: '25px', color: '#fff', fontSize: '15px', fontWeight: '400' }}> 30% </div>
+                    <div class="row g-0">
+                      <div class="col-md-4 cm-0">
+                        <img src={require('../assets/Card_img/customizable-mug-4.webp')} alt="Pet Family" className='img-fluid m-4 ' style={{ objectFit: 'cover' }} />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body text-start">
+                          <h2 class="card-title  mt-4 mx-3">Thức ăn cho mèo vị gà tây Flower Chair</h2>
+                          <div style={{ display: 'inline' }}>
+                            <h3 class="mx-3" style={{ fontWeight: '700', color: '#0174BE', display: 'inline-block' }}> 320.000đ </h3>
+                            <p style={{ fontWeight: '400', fontSize: '17px', color: '#666', display: 'inline-block' }} ><del> 3200000 </del></p>
+                          </div>
+
+                          <div class="cart ">
+                            <Button type='button' className='text-start mx-3 rounded border border-light' style={{ width: '45px', height: '45px', backgroundColor: 'rgb(255, 136, 75)' }}>
+                              <img src={require('../assets/Card_img/ic-cart-product2.webp')} alt="Pet Family" className='' style={{ width: '26px', height: '26px' }} />
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div className='col d-flex justify-content-center '>
+                  <div class="card mb-3 position-relative" style={{ maxWidth: '650px', height: '250px' }}>
+                    <div class="position-absolute bg-danger top-0 start-0 m-0 p-0" style={{ width: '45px', height: '25px', color: '#fff', fontSize: '15px', fontWeight: '400' }}> 30% </div>
+                    <div class="row g-0">
+                      <div class="col-md-4 cm-0">
+                        <img src={require('../assets/Card_img/customizable-mug-4.webp')} alt="Pet Family" className='img-fluid m-4 ' style={{ objectFit: 'cover' }} />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body text-start">
+                          <h2 class="card-title  mt-4 mx-3">Thức ăn cho mèo vị gà tây Flower Chair</h2>
+                          <div style={{ display: 'inline' }}>
+                            <h3 class="mx-3" style={{ fontWeight: '700', color: '#0174BE', display: 'inline-block' }}> 320.000đ </h3>
+                            <p style={{ fontWeight: '400', fontSize: '17px', color: '#666', display: 'inline-block' }} ><del> 3200000 </del></p>
+                          </div>
+
+                          <div class="cart ">
+                            <Button type='button' className='text-start mx-3 rounded border border-light' style={{ width: '45px', height: '45px', backgroundColor: 'rgb(255, 136, 75)' }}>
+                              <img src={require('../assets/Card_img/ic-cart-product2.webp')} alt="Pet Family" className='' style={{ width: '26px', height: '26px' }} />
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div className='row p-3'>
+
+                <div className='col d-flex justify-content-center '>
+                  <div class="card mb-3 position-relative" style={{ maxWidth: '650px', height: '250px' }}>
+                    <div class="position-absolute bg-danger top-0 start-0 m-0 p-0" style={{ width: '45px', height: '25px', color: '#fff', fontSize: '15px', fontWeight: '400' }}> 30% </div>
+                    <div class="row g-0">
+                      <div class="col-md-4 cm-0">
+                        <img src={require('../assets/Card_img/customizable-mug-4.webp')} alt="Pet Family" className='img-fluid m-4 ' style={{ objectFit: 'cover' }} />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body text-start">
+                          <h2 class="card-title  mt-4 mx-3">Thức ăn cho mèo vị gà tây Flower Chair</h2>
+                          <div style={{ display: 'inline' }}>
+                            <h3 class="mx-3" style={{ fontWeight: '700', color: '#0174BE', display: 'inline-block' }}> 320.000đ </h3>
+                            <p style={{ fontWeight: '400', fontSize: '17px', color: '#666', display: 'inline-block' }} ><del> 3200000 </del></p>
+                          </div>
+
+                          <div class="cart ">
+                            <Button type='button' className='text-start mx-3 rounded border border-light' style={{ width: '45px', height: '45px', backgroundColor: 'rgb(255, 136, 75)' }}>
+                              <img src={require('../assets/Card_img/ic-cart-product2.webp')} alt="Pet Family" className='' style={{ width: '26px', height: '26px' }} />
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className='col d-flex justify-content-center '>
+                  <div class="card mb-3 position-relative" style={{ maxWidth: '650px', height: '250px' }}>
+                    <div class="position-absolute bg-danger top-0 start-0 m-0 p-0" style={{ width: '45px', height: '25px', color: '#fff', fontSize: '15px', fontWeight: '400' }}> 30% </div>
+                    <div class="row g-0">
+                      <div class="col-md-4 cm-0">
+                        <img src={require('../assets/Card_img/customizable-mug-4.webp')} alt="Pet Family" className='img-fluid m-4 ' style={{ objectFit: 'cover' }} />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body text-start">
+                          <h2 class="card-title  mt-4 mx-3">Thức ăn cho mèo vị gà tây Flower Chair</h2>
+                          <div style={{ display: 'inline' }}>
+                            <h3 class="mx-3" style={{ fontWeight: '700', color: '#0174BE', display: 'inline-block' }}> 320.000đ </h3>
+                            <p style={{ fontWeight: '400', fontSize: '17px', color: '#666', display: 'inline-block' }} ><del> 3200000 </del></p>
+                          </div>
+
+                          <div class="cart ">
+                            <Button type='button' className='text-start mx-3 rounded border border-light' style={{ width: '45px', height: '45px', backgroundColor: 'rgb(255, 136, 75)' }}>
+                              <img src={require('../assets/Card_img/ic-cart-product2.webp')} alt="Pet Family" className='' style={{ width: '26px', height: '26px' }} />
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+
+
+
+        <div className='row mt-5 text-center' style={{ backgroundColor: '#EEEEEE' }} >
+          <h2 className='m-0' style={{ font: '600 18px/20px "Roboto', padding: '14PX 0' }}>SẢN PHẨM GIẢM GIÁ</h2>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <p> aaaaaaaaaaaaaaaa</p>
+        <p> aaaaaaaaaaaaaaaa</p>
+        <p> aaaaaaaaaaaaaaaa</p>
+        <p> aaaaaaaaaaaaaaaa</p>
+        <p> aaaaaaaaaaaaaaaa</p>
+        <p> aaaaaaaaaaaaaaaa</p>
+        <p> aaaaaaaaaaaaaaaa</p>
+        <p> aaaaaaaaaaaaaaaa</p>
+        <p> aaaaaaaaaaaaaaaa</p>
+        <p> aaaaaaaaaaaaaaaa</p>
+        <p> aaaaaaaaaaaaaaaa</p>
+        <p> aaaaaaaaaaaaaaaa</p>
+        <p> aaaaaaaaaaaaaaaa</p>
+        <p> aaaaaaaaaaaaaaaa</p>
+        <p> aaaaaaaaaaaaaaaa</p>
+        <p> aaaaaaaaaaaaaaaa</p>
+        <p> aaaaaaaaaaaaaaaa</p>
+        <p> aaaaaaaaaaaaaaaa</p>
+        <p> aaaaaaaaaaaaaaaa</p>
+        <p> aaaaaaaaaaaffffaaaaa</p>
+
+
+      </div>
+    </div>
+
 );
 
 export default Home;

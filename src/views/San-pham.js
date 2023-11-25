@@ -121,11 +121,14 @@ const SanPham = () => (
     </div>
   ))}
 </div>
-      
+  <div className='main ' style={{ marginTop: '165px' }}>
+  <div className='container-fluid' style={{ width: '1550px' }} >
+
+</div>
+      </div>
   </div>
 </div>
 );
 
 export default SanPham;
-
 

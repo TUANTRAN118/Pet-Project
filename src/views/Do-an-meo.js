@@ -78,7 +78,7 @@ const CatFood = () => (
     </div>
   ))}
 </div>
-      
+
   </div>
 </div>
 );

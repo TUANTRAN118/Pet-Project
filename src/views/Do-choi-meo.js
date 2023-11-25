@@ -78,6 +78,7 @@ const CatPlay = () => (
     </div>
   ))}
 </div>
+
   </div>
 </div>
 );

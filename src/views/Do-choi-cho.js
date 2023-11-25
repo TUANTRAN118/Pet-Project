@@ -78,6 +78,7 @@ const DogPlay = () => (
     </div>
   ))}
 </div>
+
   </div>
 </div>
 );
