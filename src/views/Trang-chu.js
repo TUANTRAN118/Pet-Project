@@ -81,7 +81,7 @@ const Home = () => (
 
           <div className='item_8 row' style={{ height: '35px' }}>
             <div className='col-2 m-0 p-0'>
-              <img src={require('/pet-project/src/assets/Product_Categories_ic/herbs.png')} alt="Pet Family" style={{ height: '35px', width: '35px' }} />
+              <img src={require('../assets/Product_Categories_ic/herbs.png')} alt="Pet Family" style={{ height: '35px', width: '35px' }} />
             </div>
 
             <div className='col d-flex  align-items-center' style={{ fontSize: '20px', fontFamily: 'Robonto', fontWeight: '300' }}>
@@ -177,9 +177,96 @@ const Home = () => (
         </div>
       </div>
 
-      <div className='row mt-5 text-center' style={{backgroundColor:'#EEEEEE'}} >
-      <h2 className='m-0' style={{font:'600 18px/20px "Roboto', padding:'14PX 0'}}>SẢN PHẨM GIẢM GIÁ</h2>
+      <div className='row mt-5 text-center' style={{ backgroundColor: '#EEEEEE' }} >
+        {/* <h2 className='m-0' style={{ font: '600 18px/20px "Roboto', padding: '14PX 0' }}>SẢN PHẨM GIẢM GIÁ</h2> */}
+
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+
+              <div class="card" style={{ width: '18rem' }}>
+                <img src={require('../assets/slide/home_banner2.webp')} alt="Pet Family" className='img-fluid ' style={{ objectFit: 'cover' }} />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="carousel-item">
+              <div class="card" style={{ width: '18rem' }}>
+                <img src={require('../assets/slide/home_banner2.webp')} alt="Pet Family" className='img-fluid ' style={{ objectFit: 'cover' }} />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="carousel-item">
+
+              <div className='row d-flex'>
+                <div class="card m-5" style={{ width: '18rem' }}>
+                  <img src={require('../assets/slide/home_banner2.webp')} alt="Pet Family" className='img-fluid ' style={{ objectFit: 'cover' }} />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+
+                <div class="card m-5" style={{ width: '18rem' }}>
+                  <img src={require('../assets/slide/home_banner2.webp')} alt="Pet Family" className='img-fluid ' style={{ objectFit: 'cover' }} />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+
+                <div class="card m-5" style={{ width: '18rem' }}>
+                  <img src={require('../assets/slide/home_banner2.webp')} alt="Pet Family" className='img-fluid ' style={{ objectFit: 'cover' }} />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+
       </div>
+
+
 
 
 
